@@ -1,0 +1,75 @@
+﻿/*
+Author
+- Shashith Adithya
+- SLIIT
+- JS Project
+*/
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>The Game of dice</title>
+    <link type="text/css" rel="stylesheet" href="Styles/Style.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <!--<h1>The Game of Dice</h1>-->
+        <table>
+            <tr>
+                <th><div id="Player1">Player 1 <i id="P1active" class="fa fa-circle" style="display:none;font-size:18px;color:red"></i></div></th>
+                <th></th>
+                <th><div id="Player2">Player 2 <i id="P2active" class="fa fa-circle" style="display:none;font-size:18px;color:red"></i></div></th>
+            </tr>
+            <tr>
+                <td><div id="Score1" class="score">0</div></td>
+                <td><div id="message" style="font-size:18px;color:red" ></div></td>
+                <td><div id="Score2" class="score">0</div></td>
+            </tr>
+
+            <tr>
+                <td><i id="P1trophy" class="fa fa-trophy" style="display:none;font-size:80px;color:goldenrod"></i></td>
+                <td><button id="btnRoll"><i class='fas fa-dice' title="Roll the Dice." style='font-size:48px;color:darkgreen'></i></button></td>
+                <td><i id="P2trophy" class="fa fa-trophy" style="display:none;font-size:80px;color:goldenrod"></i></td>
+            </tr>
+            <tr>
+                <td>
+                    <i id="awsDice1" class='fas fa-dice-two' style='display:none;font-size:100px;color:red'></i>
+                </td>
+                <td>
+                    <button id="btnPass"><i class="fa fa-exchange" title="Lock the score and pass chance." style="font-size:48px;color:darkgreen"></i></button>
+                </td>
+                <td>
+                    <i id="awsDice2" class='fas fa-dice-two' style='display:none;font-size:100px;color:red'></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="turnTotal">
+                        <div class="turnTotal-label">Turn Total</div>
+                        <div class="turnTotal-score" id="turnTotal1">0</div>
+                    </div>
+                </td>
+                <td>
+                    <button id="btnReset"><i class="fa fa-refresh" title="Restart the game." style="font-size: 48px;color: darkgreen"></i></button>
+                </td>
+                <td>
+                    <div class="turnTotal">
+                        <div class="turnTotal-label">Turn Total</div>
+                        <div class="turnTotal-score" id="turnTotal2">0</div>
+                    </div>
+                </td>
+            </tr>
+
+            
+        </table>
+    </div>
+    
+
+
+    <script type="text/javascript" src="Scripts/Controllers.js"></script>
+    <script type="text/javascript" src="Scripts/DiceGame.js"></script>
+</body>
+</html>
